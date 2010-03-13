@@ -1,0 +1,24 @@
+---
+abstract: 'Makes paths compact'
+author:
+  - 'Alan Haggai Alavi <haggai@cpan.org>'
+build_requires:
+  Test::More: 0
+configure_requires:
+  Module::Build: 0.36
+generated_by: 'Module::Build version 0.3603'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Path-Trim
+provides:
+  Path::Trim:
+    file: lib/Path/Trim.pm
+    version: v0.0.1
+requires:
+  version: 0
+resources:
+  license: http://dev.perl.org/licenses/
+  repository: git://github.com/alanhaggai/Path-Trim.git
+version: v0.0.1
