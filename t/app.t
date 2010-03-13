@@ -1,6 +1,6 @@
 #!perl -T
 
-use Test::More;
+use Test::More 'tests' => 136;
 use Path::Trim;
 
 my $pt = Path::Trim->new();
@@ -178,5 +178,3 @@ is( $pt->trim_path('\\a\\b\\..\\..\\.\\c\\d'), '\\c\\d', '\\a\\b\\..\\..\\.\\c\\
 is( $pt->trim_path('a\\b\\..\\..\\.\\c\\d\\'), 'c\\d\\', 'a\\b\\..\\..\\.\\c\\d\\ => c\\d\\' );
 
 is( $pt->trim_path('\\a\\b\\..\\..\\.\\c\\d\\'), '\\c\\d\\', '\\a\\b\\..\\..\\.\\c\\d\\ => \\c\\d\\' );
-
-done_testing();
