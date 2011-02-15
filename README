@@ -1,30 +1,33 @@
-Path-Trim version 0.0.1
+Path-Trim version 0.0.2
 
 NAME
     Path::Trim - Makes paths compact
 
 VERSION
-    This document describes Path::Trim version 0.0.1
+    This document describes Path::Trim version 0.0.2
 
 INSTALLATION
 
 To install this module, run the following commands:
 
-	perl Build.PL
-	./Build
-	./Build test
-	./Build install
+    perl Build.PL
+    ./Build
+    ./Build test
+    ./Build install
 
 SYNOPSIS
         use Path::Trim;
 
         my $path = 'a/b/../.././c/d';
         my $pt = Path::Trim->new();
+        $pt->set_directory_separator('/');
         $trimmed_path = $pt->trim_path($path);
 
 DESCRIPTION
     Trims paths containing redundant current directory and parent directory
-    entries. For example:
+    entries.
+
+    For example:
 
         a/b/../.././c/d
 
@@ -33,6 +36,9 @@ DESCRIPTION
         c/d
 
 INTERFACE
+    "new()"
+        Returns an object of Path::Trim.
+
     "get_current_directory()"
         Returns the current directory representation.
 
@@ -42,9 +48,9 @@ INTERFACE
 
         Defaults to "." if not set with "set_current_directory()".
 
-    "set_current_directory( current_directory_representation )"
+    "set_current_directory( current_directory )"
         Sets the current directory representation to the value of
-        "current_directory_representation".
+        "current_directory".
 
     "get_parent_directory()"
         Returns the parent directory representation.
@@ -55,28 +61,30 @@ INTERFACE
 
         Defaults to ".." if not set with "set_parent_directory()".
 
-    "set_parent_directory( parent_directory_representation )"
+    "set_parent_directory( parent_directory )"
         Sets the parent directory representation to the value of
-        "parent_directory_representation".
+        "parent_directory".
 
     "get_directory_separator()"
         Returns the directory separator, if it has already been set with
         "set_directory_separator()".
 
-    "set_directory_separator( undef | directory_separator )"
+    "set_directory_separator( directory_separator )"
         Sets the directory separator to the value of "directory_separator".
-        If "directory_separator" is "undef", uses the operating system's
-        default directory separator.
 
     "trim_path( path )"
-        Accepts a path (without volume) and returns the trimmed version.
+        Accepts a path (without volume) and returns the trimmed version. It
+        assumes that a directory separator has already been set with
+        "set_directory_separator()".
+
+        This is different from "Cwd"'s "abs_path()" in that it does not have
+        any filesystem ties.
 
 CONFIGURATION AND ENVIRONMENT
     Path::Trim requires no configuration files or environment variables.
 
 DEPENDENCIES
-    File::Spec
-        First released with perl 5.00405
+    None.
 
 INCOMPATIBILITIES
     None reported.
