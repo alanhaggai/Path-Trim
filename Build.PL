@@ -5,7 +5,7 @@ use Module::Build;
 my $builder = Module::Build->new(
     'module_name'       => 'Path::Trim',
     'license'           => 'perl',
-    'dist_author'       => 'Alan Haggai Alavi <haggai@cpan.org>',
+    'dist_author'       => 'Alan Haggai Alavi <alanhaggai@alanhaggai.org>',
     'dist_version_from' => 'lib/Path/Trim.pm',
     'build_requires'    => { 'Test::More' => 0, },
     'requires'          => { 'version' => 0, },
