@@ -10,8 +10,10 @@ my $builder = Module::Build->new(
     'build_requires'    => { 'Test::More' => 0, },
     'requires'          => { 'version' => 0, },
     'meta_merge'        => {
-        'resources' =>
-          { 'repository' => 'git://github.com/alanhaggai/Path-Trim.git', },
+        'resources' => {
+            'homepage'   => 'http://github.com/alanhaggai/Path-Trim',
+            'repository' => 'git://github.com/alanhaggai/Path-Trim.git',
+        },
     },
     'add_to_cleanup' => ['Path-Trim-*'],
 );
