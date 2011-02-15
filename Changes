@@ -1,4 +1,7 @@
 Revision history for Path-Trim
 
+0.0.2 Tuesday, 15 February 2011
+      - included note about filesystem ignorance
+
 0.0.1 Saturday, 13 March 2010
-       Initial release.
+      - initial release
