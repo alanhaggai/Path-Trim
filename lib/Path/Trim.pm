@@ -91,7 +91,7 @@ Path::Trim - Makes paths compact
 
 =head1 VERSION
 
-This document describes Path::Trim version 0.0.1
+This document describes Path::Trim version 0.0.3
 
 
 =head1 SYNOPSIS
@@ -204,7 +204,7 @@ Alan Haggai Alavi  C<< <haggai@cpan.org> >>
 
 =head1 LICENCE AND COPYRIGHT
 
-Copyright (c) 2010, Alan Haggai Alavi C<< <haggai@cpan.org> >>. All rights reserved.
+Copyright (c) 2010, 2011 Alan Haggai Alavi C<< <haggai@cpan.org> >>. All rights reserved.
 
 This module is free software; you can redistribute it and/or
 modify it under the same terms as Perl itself. See L<perlartistic>.

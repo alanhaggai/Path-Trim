@@ -1,10 +1,10 @@
-Path-Trim version 0.0.2
+Path-Trim version 0.0.3
 
 NAME
     Path::Trim - Makes paths compact
 
 VERSION
-    This document describes Path::Trim version 0.0.2
+    This document describes Path::Trim version 0.0.3
 
 INSTALLATION
 
@@ -100,7 +100,7 @@ AUTHOR
     Alan Haggai Alavi "<haggai@cpan.org>"
 
 LICENCE AND COPYRIGHT
-    Copyright (c) 2010, Alan Haggai Alavi "<haggai@cpan.org>". All rights
+    Copyright (c) 2010, 2011 Alan Haggai Alavi "<haggai@cpan.org>". All rights
     reserved.
 
     This module is free software; you can redistribute it and/or modify it
