@@ -3,7 +3,7 @@ package Path::Trim;
 use warnings;
 use strict;
 
-use version; our $VERSION = qv('0.0.2');
+use version; our $VERSION = qv('0.0.3');
 
 sub new {
     return bless {}, __PACKAGE__;
